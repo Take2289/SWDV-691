@@ -1,11 +1,10 @@
-
 <template>
   <div id="app">
     <div id="nav">
       <router-link to="/Login">Login</router-link> |
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/Inventory">Inventory</router-link>
+      <router-link to="/Orders">Orders</router-link>
     </div>
     <router-view/>
   </div>
@@ -20,14 +19,11 @@
   color: #2c3e50;
   background-color:rgb(88, 147, 202);
 }
-
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }

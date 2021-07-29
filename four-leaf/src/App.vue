@@ -1,4 +1,3 @@
-
 <template>
   <div id="app">
     <div id="nav">
@@ -20,14 +19,11 @@
   color: #2c3e50;
   background-color:rgb(88, 147, 202);
 }
-
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }

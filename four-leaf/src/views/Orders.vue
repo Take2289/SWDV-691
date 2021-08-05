@@ -24,7 +24,7 @@
                <v-hover v-slot:default="{ hover }">
                <v-card
     max-width="250"
-    max-heith="250"
+    max-height="300"
     align="center"
   >
       <v-card-actions color="">

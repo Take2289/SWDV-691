@@ -216,7 +216,7 @@
     <v-img
       src="B9.jpg"
       width="250"
-      height="200"
+      height="180"
     ></v-img>
 
     <v-card-text class="black--text">
@@ -261,7 +261,7 @@
     <v-img
       src="B6.jpg"
       width="230"
-      height="200"
+      height="180"
     ></v-img>
 
     <v-card-text class="black--text">

@@ -2,12 +2,13 @@
   <v-content>
     <v-col>
             <v-container>
+
               <h1 class="text-center">About Us</h1>
             </v-container>
           </v-col>
     <div class="center">
       <v-img src="../assets/img6.jpg">
-        <v-row align="center" justify-content:="center" class="lightbox white--text pa-2">
+        <v-row align="inherit" justify-content:="center" class="lightbox white--text pa-2">
         </v-row>
       </v-img>
     </div>

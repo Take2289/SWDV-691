@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-content>
       <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
+        <v-row align="center" justify="left">
           <v-col cols="12" sm="8" md="8">
             <v-card class="elevation-12">
               <v-window v-model="step">

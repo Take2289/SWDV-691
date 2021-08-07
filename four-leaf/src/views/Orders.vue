@@ -31,7 +31,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -57,7 +57,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -83,7 +83,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -109,7 +109,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -135,7 +135,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -161,7 +161,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -187,7 +187,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
               </v-expand-transition>
@@ -213,7 +213,7 @@
               </v-card-text>
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
-                  style="height: 100%;">
+                  style="height: 80%;">
                   <v-btn outlined color="black"> Detail</v-btn>
                 </div>
 

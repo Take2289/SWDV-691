@@ -41,6 +41,7 @@
         <v-list-item to="/">Home</v-list-item> 
         <v-list-item to="/about">About</v-list-item> 
         <v-list-item to="/Orders">Orders</v-list-item>
+         <v-list-item to="/Checkout">Checkout</v-list-item>
       </v-list>
     </v-navigation-drawer>
 

@@ -22,10 +22,10 @@
               <v-card-actions color="">
                 <v-spacer></v-spacer>
                 <v-btn icon>
-                  <v-icon>edit</v-icon>
+                  <v-icon>add</v-icon>
                 </v-btn>
               </v-card-actions>
-              <v-img src="B1.jpg" width="200" height="200"></v-img>
+              <v-img :src="item.Image" width="200" height="200"></v-img>
 
               <v-card-text class="black--text" v-text="item.Name">
                 <!-- CheeseBurger and Fries Deluxe -->
@@ -37,7 +37,7 @@
                 </div>
               </v-expand-transition>
               <v-btn absolute color="blue" class="white--text" fab medium left top>
-                <h1>1</h1>
+                <h1>{{i+1}}</h1>
               </v-btn>
             </v-card>
           </v-hover>

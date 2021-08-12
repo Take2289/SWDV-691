@@ -27,7 +27,7 @@
               </v-card-actions>
               <v-img src="B1.jpg" width="200" height="200"></v-img>
 
-              <v-card-text class="black--text" v-text="item.text">
+              <v-card-text class="black--text" v-text="item.Name">
                 <!-- CheeseBurger and Fries Deluxe -->
               </v-card-text>
               <v-expand-transition>
@@ -49,6 +49,8 @@
 
 <script>
   // @ is an alias to /src
+import axios from 'axios';
+
   export default {
     name: 'home',
     components: {},
@@ -59,12 +61,13 @@
     },
     data: () => ({
       selectedItem: 1,
-      items: [
-        { text: 'Real-Time', icon: 'mdi-clock' },
-        { text: 'Audience', icon: 'mdi-account' },
-        { text: 'Conversions', icon: 'mdi-flag' },
-      ],
-    })
+      items: null,
+    }),
+    mounted () {
+      axios.get("http://localhost:3000/fooditems").then(response => {this.items = response.data;
+      console.log(this.items);
+      })
+    }
   }
 </script>
 <style>

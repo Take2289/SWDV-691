@@ -4,6 +4,9 @@ const port = 3000
 const MongoClient = require('mongodb').MongoClient 
 const DB_URL = "mongodb://localhost:27017"
 const DB_Name = "FourLeafDB"
+const cors = require('cors')
+app.use(cors())
+app.options('*', cors())
 
 var mongo_client = null; 
 
@@ -25,7 +28,7 @@ MongoClient.connect(
 app.get('/fooditems', (req, res) => {
   const collection = mongo_client.db(DB_Name).collection("fooditems");
   collection.find().toArray().then(results => {
-
+    console.log(results);
     res.send(results)
   });
 })

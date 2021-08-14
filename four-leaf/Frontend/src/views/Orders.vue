@@ -6,7 +6,6 @@
           <v-text-field hide-details label="Search items" prepend-icon="mdi-magnify" single-line></v-text-field>
         </v-col>
         <v-spacer></v-spacer>
-        <span class="blue--text mt-9">29 Items</span>
         <v-btn text class="mt-7">
           <v-icon color="blue" class="mr-n10">menu</v-icon>
         </v-btn>
@@ -18,7 +17,7 @@
         <v-col cols="12" md="3" class="mb-4" v-for="(item, i) in items"
           :key="i">
           <v-hover v-slot:default="{ hover }">
-            <v-card max-width="250" max-height="300" align="center">
+            <v-card max-width="250" max-height="370" align="center">
               <v-card-actions color="">
                 <v-spacer></v-spacer>
                 <v-btn icon>
@@ -27,9 +26,11 @@
               </v-card-actions>
               <v-img :src="item.Image" width="200" height="200"></v-img>
 
-              <v-card-text class="black--text" v-text="item.Name">
-                <!-- CheeseBurger and Fries Deluxe -->
+              <v-card-text class="black--text" v-text="item.Name" >
               </v-card-text>
+              <v-card-text class="black--text" v-text="item.Price">
+              </v-card-text>
+            
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out blue v-card--reveal display-3 white--text"
                   style="height: 80%;">

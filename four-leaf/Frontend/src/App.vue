@@ -1,17 +1,26 @@
 <template>
   <div id="app">
     <v-app>
-   
-    <v-system-bar app>
-      <v-spacer></v-spacer>
+   <div>
+        <v-toolbar color="grey lighten-2">
+            <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-title><a href="/">ShoppingCart</a></v-toolbar-title>
+            <v-spacer></v-spacer>
 
-      <v-icon>mdi-square</v-icon>
-
-      <v-icon>mdi-circle</v-icon>
-
-      <v-icon>mdi-triangle</v-icon>
-    </v-system-bar>
-
+            <v-toolbar-items>
+                <v-btn>
+                Four Leaf
+                </v-btn>
+                <v-btn :to="{name: 'Checkout'}">
+                    <v-badge left color="green">
+                        <span slot="badge"></span>
+                        <v-icon>shopping_cart</v-icon> Cart
+                    </v-badge>
+                </v-btn>
+            </v-toolbar-items>
+        </v-toolbar>
+    </div>
+    
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -56,7 +65,13 @@
       </v-container>
     </v-main>
   </v-app>
-    
+  <div>
+
+  <div class="fluid-container footer">
+    <p class="text-center"> Copyright &copy; 2021, Fourleaf Marketing. All Rights Reserved.</p>
+  </div>
+</div>
+  
 
 
   </div>
@@ -80,5 +95,13 @@
       color: #42b983;
     }
   }
+}
+.fluid-container.footer{
+  background: rgb(246, 246, 248);
+}
+.fluid-container.footer > *:last-child {
+    margin-bottom: 0px;
+    color: rgb(58, 48, 48);
+    font: 8px "Helvetica"80;
 }
 </style>

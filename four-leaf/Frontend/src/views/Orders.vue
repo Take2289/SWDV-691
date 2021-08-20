@@ -20,7 +20,7 @@
             <v-card max-width="250" max-height="370" align="center">
               <v-card-actions color="">
                 <v-spacer></v-spacer>
-                <v-btn icon>
+                <v-btn value="icon">
                   <v-icon>add</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -49,18 +49,25 @@
 </template>
 
 <script>
+import PrimaryButton from './components/PrimaryButton.vue'
   // @ is an alias to /src
 import axios from 'axios';
 
+
   export default {
+    props:{
+      value: String
+    },
     name: 'home',
-    components: {},
+    components: {
+      PrimaryButton
+    },
     computed: {
       theme() {
         return (this.$vuetify.theme.dark) ? 'dark' : 'light'
       }
     },
-    data: () => ({
+    data:() => ({
       selectedItem: 1,
       items: null,
     }),
@@ -68,7 +75,7 @@ import axios from 'axios';
       axios.get("http://localhost:3000/fooditems").then(response => {this.items = response.data;
       console.log(this.items);
       })
-    }
+    },
   }
 </script>
 <style>

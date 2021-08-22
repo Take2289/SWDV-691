@@ -20,9 +20,12 @@
             <v-card max-width="250" max-height="370" align="center">
               <v-card-actions color="">
                 <v-spacer></v-spacer>
-                <v-btn value="icon">
-                  <v-icon>add</v-icon>
-                </v-btn>
+                 
+                 <v-btn> 
+                   
+                    <v-icon>add</v-icon>
+                 </v-btn>
+              
               </v-card-actions>
               <v-img :src="item.Image" width="200" height="200"></v-img>
 
@@ -49,18 +52,20 @@
 </template>
 
 <script>
-import PrimaryButton from './components/PrimaryButton.vue'
+
+
   // @ is an alias to /src
 import axios from 'axios';
+
 
 
   export default {
     props:{
       value: String
     },
-    name: 'home',
+    name: 'Orders',
     components: {
-      PrimaryButton
+      
     },
     computed: {
       theme() {

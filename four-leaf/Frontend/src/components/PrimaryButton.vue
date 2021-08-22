@@ -1,5 +1,21 @@
 <template>
-    <div>
-        <h2>{{ value }}</h2>
-        <h1>{{ count }}</h1>
-        
+  <div>
+
+    <v-btn @click="count++"></v-btn>
+  </div>
+</template>
+
+<script>
+export default{
+    props: {
+        value: String
+    },
+
+    data:function() {
+        return {
+            ObjectID:0
+
+        };
+    }
+}
+</script>
